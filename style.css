@@ -1,0 +1,223 @@
+header {
+  background-color: rgb(31, 142, 25);
+  height: auto;
+}
+.main {
+  background-color: rgb(255, 255, 192);
+  height:auto;
+}
+
+footer {
+  background-color: rgb(123, 185, 240);
+  height:200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo img{
+  height: 50px;
+}
+
+.navbarMainLI {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+  font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.navbarMain{
+  text-align: center;
+}
+
+.navbarMainLI a{
+  text-decoration: none;
+  color: white;
+}
+
+.mainimg {
+  width: 100%;
+  height: auto;
+  border: black solid;
+}
+
+.infogrid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap:10px;
+  padding: 20px 30px 30px 20px;
+}
+
+.aboutText {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px 30px 0px 20px;
+}
+
+footer {
+  background-color: #373738;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul ui{
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0;
+  color: white;
+}
+
+.inline-block {
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+}
+
+/* My UX Skills section coded using CSS flex */
+.mySkills {
+  background-color: #f4f4f4;
+  padding: 40px;
+  text-align: center;
+}
+
+.mySkills h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flexContainer > div {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.flexContainer img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.flexContainer h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.flexContainer p {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+/* My Work Section Constructed using CSS Grid */
+.myWork {
+  background-color: #eaeaea;
+  padding: 40px;
+  text-align: center;
+}
+
+.myWork h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.workGrid > div {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.workGrid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.workGrid h4 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.workGrid p {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.workGrid button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #31ae19;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.workGrid button:hover {
+  background-color: #277e13;
+}
+
+.myWork h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #31ae19;
+}
+
+.myWork h3:hover {
+  color: #277e13;
+}
+
+/* Mobile media query */
+@media (max-width: 600px) {
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flexContainer > div {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .workGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+
+  .workGrid > div {
+    margin: 0 auto;
+  }
+
+  .workGrid > div:first-child,
+  .workGrid > div:nth-child(3) {
+    grid-column: span 1;
+  }
+
+  .workGrid > div:nth-child(2),
+  .workGrid > div:nth-child(4) {
+    grid-column: span 1;
+  }
+}
